@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(255, 250, 235);
+    padding: 50px 150px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1130px;
+    margin: auto auto;
+    padding: 0px ;
+}
+header h1 {
+    font-size: 37px;
+}
+.days {
+    display: inline-flex;
+    padding: 2px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.days a {
+    text-decoration: none;
+    color: black;
+}
+.selected {
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 18px;
+    margin: 2px;
+    padding: 6px;
+}
+.unselected {
+    font-size: 18px;
+    margin: 2px;
+    padding: 6px;
+    color: rgb(149, 146, 146);
+    border-bottom: 2px solid #fffaeb;
+}
+.parentFrame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1352px;
+    margin: auto auto;
+}
+.frame {
+    display: flex;
+    border-radius: 20px;
+    background-color: blue;
+    margin: 10px;
+    width: 280px;
+    height: 370px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    flex-direction: column;
+    cursor: pointer;
+}
+.frame div {
+    padding: 20px;
+    width: 270px;
+    height: 130px;
+    margin: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: bold;
+}
+.frame div p {
+    margin: 4px 0px;
+    font-size: 13px;
+    color: rgb(49, 49, 49);
+    font-weight: 700;
+}
+.frame div h3 {
+    font-size: 20px;
+}
+.imgframe {
+    width: 270px;
+    height: 230px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 1px solid black;
+    object-fit: cover;
+}
+footer {
+    margin-top: 30px;
+}
+footer a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+@media only screen and (max-width: 950px){
+    body {
+        padding: 50px;
+    }
+    .days p {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .frame {
+        width: 210px;
+        height: 300px;
+    }
+    .imgframe {
+        width: 200px;
+        height: 180px;
+    }
+    .frame div {
+        padding: 20px;
+        width: 200px;
+        height: 110px;
+    }
+    .frame div p {
+        font-size: x-small;
+    }
+    .frame div h3 {
+        font-size: 15px;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    .days p {
+        font-size: 12px;
+    }
+}
